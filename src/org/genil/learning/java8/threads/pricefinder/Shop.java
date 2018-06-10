@@ -11,6 +11,13 @@ public class Shop {
     public static void main(String[] args) {
 
     }
+
+    public Shop(String name) {
+        this.name = name;
+    }
+
+    private final String name;
+
     private static Random random = new Random();
 
     /**
@@ -28,7 +35,7 @@ public class Shop {
      * @param product
      * @return
      */
-    public Future<Double> getPriceAsync(String product) {
+    /*public Future<Double> getPriceAsync(String product) {
         CompletableFuture<Double> futurePrice = new CompletableFuture<>();
 
         new Thread(()-> {
@@ -43,6 +50,17 @@ public class Shop {
         }).start();
 
         return futurePrice;
+
+    }*/
+
+    /**
+     * Ultra modern simple approach
+     * @param product
+     * @return
+     */
+
+    public Future<Double> getPriceAsync(String product) {
+        return CompletableFuture.supplyAsync(()->calculatePrice(product));
 
     }
 
@@ -60,8 +78,8 @@ public class Shop {
 
     /**
      * Randomly generated price. Do not worry..
-     * @param product
-     * @return
+     * @param product name of the product
+     * @return price
      */
     private Double calculatePrice(String product) {
         delay();

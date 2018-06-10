@@ -11,11 +11,11 @@ import java.util.concurrent.Future;
  **/
 public class ShopRunner {
     public static void main(String[] args) {
-        Shop shop = new Shop();
+        Shop shop = new Shop("Best Buy");
         // See My memory is good ! I remember instant class :)
         Instant now = Instant.now();
 
-        Future<Double> futurePrice =  shop.getPriceAsync("My favorite product");
+        Future<Double> futurePrice =  shop.getPriceAsync("Bose wireless headphone");
 
         Instant invocationTime = Instant.now();
 
