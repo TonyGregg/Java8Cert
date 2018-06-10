@@ -15,7 +15,7 @@ public class MenuStreamDemo {
     public static void main(String[] args) {
         ArrayList<Menu> menus = getMenus();
 
-        // Java 8 stream wauy
+        // Java 8 stream way
 
         /**
          * Filter calories over 500 and sort by the price, get only the menu names

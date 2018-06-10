@@ -16,6 +16,10 @@ public class Shop {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     private final String name;
 
     private static Random random = new Random();
