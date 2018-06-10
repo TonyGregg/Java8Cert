@@ -8,9 +8,15 @@ import java.util.concurrent.*;
 public class BasicThread {
 
     private static void doSomethingElse() {
-        for (int i =10;i<5000;i++) {
-            System.out.println("Doing something else "+i);
+
+        try {
+            System.out.println("let me sleep for .5 secs");
+            Thread.sleep(500L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+
+
     }
 
     private static Double doSomeCalculation() {

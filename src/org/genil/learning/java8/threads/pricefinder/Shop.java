@@ -8,6 +8,9 @@ import java.util.concurrent.Future;
  * Created by anton on 6/9/2018 8:35 PM
  **/
 public class Shop {
+    public static void main(String[] args) {
+
+    }
     private static Random random = new Random();
 
     /**
@@ -29,8 +32,13 @@ public class Shop {
         CompletableFuture<Double> futurePrice = new CompletableFuture<>();
 
         new Thread(()-> {
-            double price = calculatePrice(product);
-            futurePrice.complete(price);
+            try{
+                double price = calculatePrice(product);
+                futurePrice.complete(price);
+            } catch (Exception ex) {
+                futurePrice.completeExceptionally(ex);
+            }
+
 
         }).start();
 
@@ -60,6 +68,21 @@ public class Shop {
         return random.nextDouble() * product.charAt(0) + product.charAt(1);
 
     }
+
+    public static void doSomethingElse() {
+
+        try {
+            System.out.println("let me sleep for .5 secs");
+            Thread.sleep(500L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+
+    }
+
 
 
 }
