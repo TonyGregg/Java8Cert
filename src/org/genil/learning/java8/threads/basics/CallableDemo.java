@@ -1,5 +1,6 @@
 package org.genil.learning.java8.threads.basics;
 
+import java.util.Random;
 import java.util.concurrent.*;
 
 /**
@@ -26,5 +27,36 @@ public class CallableDemo {
         TimeUnit.SECONDS.sleep(3);
 
         System.out.println("Done executing .. ");
+
+        CallableDemo callableDemo = new CallableDemo();
+        callableDemo.doCallDemo();
     }
+
+    private void doCallDemo() {
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+//        Future<Integer> integerFuture = executorService.submit(()->this.returnRandomNumber());
+        //simplified
+        Future<Integer> integerFuture = executorService.submit(this::returnRandomNumber);
+
+        try {
+            System.out.println("Output from random "+integerFuture.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }finally {
+            executorService.shutdownNow();
+        }
+
+    }
+
+    private Integer returnRandomNumber() {
+
+        System.out.println("inside return randmon number function. . ");
+        Random random = new Random();
+        return random.nextInt(200);
+
+    }
+
 }
