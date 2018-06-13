@@ -1,4 +1,4 @@
-package org.genil.learning.java8.inversion;
+package org.genil.learning.java8.patterns.inversion;
 
 /**
  * Created by anton on 6/2/2018 7:34 AM
@@ -6,6 +6,10 @@ package org.genil.learning.java8.inversion;
 
 public class ElecticTester {
     public static void main(String[] args) {
+
+        class TEst{
+            int i = 23;
+        }
         Switchable bulb = new LightBulb();
         Switch bulbSwitch = new ElectricSwitch(bulb);
 

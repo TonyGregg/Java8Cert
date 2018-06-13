@@ -9,8 +9,14 @@ import java.util.function.Supplier;
  **/
 public class AmbigousLambdaSample {
 
-    public static void useCallable(Callable<Integer> integerCallable) {
-        System.out.println("INside use callable. ..");
+    private static void useCallable(Callable<Integer> integerCallable) {
+        try {
+            integerCallable.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("INside use callable. .."+integerCallable);
+
     }
     public static void useSupplier(Supplier<Integer> integerSupplier) {
 
@@ -25,7 +31,13 @@ public class AmbigousLambdaSample {
     public static void main(String[] args) {
         useCallable(()-> {
             System.out.println("something callable. . ");
-            throw new IOException();
+//            throw new IOException();
+            return 520;
+        });
+
+        useCallable(()-> {
+            System.out.println("Another callable .. .invoke ");
+            return 98;
         });
     }
 

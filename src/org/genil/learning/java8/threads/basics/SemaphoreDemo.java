@@ -14,7 +14,7 @@ import static org.genil.learning.java8.threads.ConcurrentUtils.stop;
  **/
 public class SemaphoreDemo {
 
-    static int counter = 0;
+    int counter = 0;
 
     Semaphore semaphore = new Semaphore(5);
 
@@ -22,9 +22,18 @@ public class SemaphoreDemo {
         SemaphoreDemo semaphoreDemo = new SemaphoreDemo();
         ExecutorService executorService = Executors.newFixedThreadPool(20);
 
-        IntStream.range(0,400).forEach(i->executorService.submit(semaphoreDemo::doSemaPhoreDemo));
+        IntStream.range(0,100).forEach(i->executorService.submit(semaphoreDemo::doSemaPhoreDemo));
+        boolean isShutDown = executorService.isShutdown();
+        boolean isTerminated = executorService.isTerminated();
+
+        System.out.printf("isShut down %s Terminated %sn ",isShutDown,isTerminated);
 
         stop(executorService);
+
+        isShutDown = executorService.isShutdown();
+        isTerminated = executorService.isTerminated();
+
+        System.out.printf("isShut down %s Terminated %s%n ",isShutDown,isTerminated);
     }
 
     private void doSemaPhoreDemo() {

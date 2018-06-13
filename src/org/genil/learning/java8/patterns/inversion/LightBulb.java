@@ -1,4 +1,4 @@
-package org.genil.learning.java8.inversion;
+package org.genil.learning.java8.patterns.inversion;
 
 /**
  * Created by anton on 6/2/2018 7:32 AM

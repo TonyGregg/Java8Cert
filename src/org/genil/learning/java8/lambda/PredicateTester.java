@@ -53,7 +53,7 @@ public class PredicateTester {
 
         List<Apple> greenApples = filterApples(inventory,Apple::isGreenApple);
 
-        for (Apple apple1: greenApples             ) {
+        for (Apple apple1: greenApples ) {
             System.out.println(apple1);
         }
 
