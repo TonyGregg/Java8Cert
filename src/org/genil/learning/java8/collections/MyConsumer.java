@@ -1,4 +1,4 @@
-package org.genil.learning.java8;
+package org.genil.learning.java8.collections;
 
 import java.util.function.Consumer;
 

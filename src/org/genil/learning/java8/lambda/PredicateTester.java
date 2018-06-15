@@ -1,12 +1,10 @@
 package org.genil.learning.java8.lambda;
 
-import javafx.stage.Screen;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import org.genil.learning.java8.Apple;
+import org.genil.learning.java8.collections.Apple;
 
 
 public class PredicateTester {

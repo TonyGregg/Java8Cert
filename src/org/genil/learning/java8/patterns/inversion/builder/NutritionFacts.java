@@ -1,5 +1,8 @@
 package org.genil.learning.java8.patterns.inversion.builder;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 /**
  * Created by genil on 6/13/18 at 11 51
  **/
@@ -52,6 +55,19 @@ public class NutritionFacts {
         //Demo
 
         NutritionFacts cocoCola = new NutritionFacts.Builder(20,10).fat(0).sodium(20).build();
+
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+
+        stack.offer(23);
+        stack.push(24);
+        stack.push(25);
+        stack.push(26);
+
+        System.out.println(stack.poll());
+        System.out.println(stack.pop());
+
+
+
     }
 
 }

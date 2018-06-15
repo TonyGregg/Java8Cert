@@ -1,4 +1,4 @@
-package org.genil.learning.java8;
+package org.genil.learning.java8.collections;
 
 public class Apple {
     public Apple(String color, int weight) {

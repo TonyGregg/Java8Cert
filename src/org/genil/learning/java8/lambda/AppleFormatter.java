@@ -1,6 +1,6 @@
 package org.genil.learning.java8.lambda;
 
-import org.genil.learning.java8.Apple;
+import org.genil.learning.java8.collections.Apple;
 
 /**
  * Created by anton on 6/7/2018 2:09 PM

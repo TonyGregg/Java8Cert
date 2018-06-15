@@ -1,6 +1,4 @@
-package org.genil.learning.java8.sorting;
-
-import org.genil.learning.java8.Apple;
+package org.genil.learning.java8.collections;
 
 import java.util.ArrayList;
 import java.util.List;

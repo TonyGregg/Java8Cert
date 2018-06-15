@@ -38,7 +38,9 @@ public class MenuStreamDemo {
         Stream<String> stringStream = highCalorieDishNames.stream();
 
         stringStream.forEach(System.out::println);
+
 //        stringStream.forEach(System.out::println); // YOu can stream just only once !! This line will fail if enabled
+        //IllegalStateException : stream already has been operated or closed
 
     }
 
