@@ -5,6 +5,7 @@ import org.genil.learning.java8.collections.Apple;
 /**
  * Created by anton on 6/7/2018 2:09 PM
  **/
+@FunctionalInterface
 public interface AppleFormatter {
     public String printStylishly(Apple apple);
 }

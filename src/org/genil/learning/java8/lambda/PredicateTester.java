@@ -9,6 +9,7 @@ import org.genil.learning.java8.collections.Apple;
 
 public class PredicateTester {
     static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> predicate) {
+        System.out.println("Inside filterApples method "+inventory.size());
         List<Apple> resultList = new ArrayList<>();
 
         for (Apple apple: inventory) {
@@ -49,7 +50,9 @@ public class PredicateTester {
         inventory.add(apple);
 
 
+        System.out.println("Going to filter the apples by color :: Green first");
         List<Apple> greenApples = filterApples(inventory,Apple::isGreenApple);
+        System.out.println("Green apples are filtered..");
 
         for (Apple apple1: greenApples ) {
             System.out.println(apple1);
