@@ -1,4 +1,4 @@
-package org.genil.learning.java8.threads;
+package org.genil.learning.java8.concurrency;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
