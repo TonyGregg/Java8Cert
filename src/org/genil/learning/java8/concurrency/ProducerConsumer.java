@@ -30,6 +30,7 @@ class Prodcuer implements Runnable {
                 System.out.println("I am producing. .. "+i);
 
                 sharedQueue.put(i);
+                System.out.println("test.. test.. produce");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

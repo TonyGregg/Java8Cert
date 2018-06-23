@@ -1,7 +1,6 @@
-package org.genil.learning.java8.patterns.inversion.builder;
+package org.genil.learning.java8.patterns.builder;
 
 import java.util.ArrayDeque;
-import java.util.Queue;
 
 /**
  * Created by genil on 6/13/18 at 11 51
