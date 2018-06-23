@@ -9,7 +9,7 @@ import java.util.List;
 public class TheHindu implements Subject {
     List<Observer> observers = new ArrayList<>();
 
-    private static final String news = "Todays is about Modi .. oorrodi ";
+    private static final String news = "Todays is about India. The growth and economics ";
     @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);

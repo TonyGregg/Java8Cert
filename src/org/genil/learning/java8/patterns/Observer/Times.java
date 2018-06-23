@@ -9,7 +9,7 @@ import java.util.List;
 public class Times implements Subject {
     List<Observer> observers = new ArrayList<>();
 
-    private static final String news = "Today is news in time is all about Mr. Trump";
+    private static final String news = "Today is news in time is all about President and immigration issues";
 
     @Override
     public void registerObserver(Observer observer) {

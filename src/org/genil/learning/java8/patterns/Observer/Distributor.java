@@ -12,6 +12,9 @@ public class Distributor  {
 
     public static void main(String[] args) {
 
+        /**
+         * Antony wants to read global as well as local news
+         */
         Observer antony = new ObserverAntony();
         TheChurch church = new TheChurch();
 
@@ -21,6 +24,7 @@ public class Distributor  {
 
 
         TheHindu hindu = new TheHindu();
+
         hindu.registerObserver(church);
         hindu.registerObserver(antony);
 
