@@ -1,11 +1,8 @@
-package org.genil.learning.java8.patterns.Observer;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.genil.learning.java8.patterns.observer;
 
 /**
  *
- * Publisher + Subscriber = Observer Pattern
+ * Publisher + Subscriber = observer Pattern
  *  *  * Publisher is the subject - New york Times, BBC, Times of India and The Hindu
  *  *  * Subscribers are the Observers - Greg Family, St. James School, Church
  *

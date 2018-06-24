@@ -1,4 +1,4 @@
-package org.genil.learning.java8.patterns.Observer;
+package org.genil.learning.java8.patterns.observer;
 
 /**
  * Created by genil on 6/23/18 at 18 29

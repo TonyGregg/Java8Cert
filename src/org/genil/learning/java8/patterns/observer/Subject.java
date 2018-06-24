@@ -1,7 +1,4 @@
-package org.genil.learning.java8.patterns.Observer;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.genil.learning.java8.patterns.observer;
 
 /**
  * Created by anton on 6/9/2018 3:37 PM
