@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
+ * Publisher + Subscriber = Observer Pattern
+ *  *  * Publisher is the subject - New york Times, BBC, Times of India and The Hindu
+ *  *  * Subscribers are the Observers - Greg Family, St. James School, Church
+ *
  * Created by anton on 6/9/2018 3:37 PM
- * Distributor implementing subject - the publishers !
  *
  **/
 public class Distributor  {
