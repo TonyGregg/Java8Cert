@@ -1,6 +1,7 @@
 package org.genil.learning.java8.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by anton on 6/22/2018 5:52 PM
@@ -26,6 +27,20 @@ public class ArrayListDemo {
                 arrayList.set(7,500);
             }
 
+        }// end of for
+
+        Iterator<Integer> iterator = arrayList.iterator();
+
+        while(iterator.hasNext()) {
+            if(iterator.next()>50) {
+                iterator.remove();
+            }
         }
+
+        for (Integer integer : arrayList) {
+            System.out.println(integer);
+        }
+
+
     }
 }

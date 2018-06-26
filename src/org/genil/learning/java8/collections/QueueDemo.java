@@ -10,7 +10,7 @@ public class QueueDemo {
 
     private static void deQueueTest() {
         System.out.println("inside dequeue test");
-        // Queuye FIFO
+        // Queue FIFO
 
         Deque<String > deque = new ArrayDeque<>();
         deque.add("Walden");
@@ -34,6 +34,9 @@ public class QueueDemo {
         System.out.println(deque.pop()); // remove first
         System.out.println(deque.pop());
         System.out.println(deque.pop());
+
+        System.out.println(deque.peek()); //null poll also returns null; remove & pop gives NoSuchElementException
+
 
 
 

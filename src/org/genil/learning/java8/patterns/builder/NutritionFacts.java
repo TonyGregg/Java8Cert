@@ -4,6 +4,8 @@ import java.util.ArrayDeque;
 
 /**
  * Created by genil on 6/13/18 at 11 51
+ *
+ * Builder pattern is used to create instance of very complex object in easiest way.
  **/
 public class NutritionFacts {
 

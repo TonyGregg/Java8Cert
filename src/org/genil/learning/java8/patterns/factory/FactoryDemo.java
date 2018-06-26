@@ -12,7 +12,7 @@ package org.genil.learning.java8.patterns.factory;
  *
  * This pattern take out the responsibility of instantiation of a class from client program to the factory class.
  *
- * It is one of the widelly used patterns in Java
+ * It is one of the widely used patterns in Java
  *
  **/
 public class FactoryDemo {

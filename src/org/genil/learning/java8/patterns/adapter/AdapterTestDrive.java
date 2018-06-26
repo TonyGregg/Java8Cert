@@ -3,7 +3,7 @@ package org.genil.learning.java8.patterns.adapter;
 /**
  * Created by genil on 6/24/18 at 10 53
  *
- * Adapter lest classes work together that couldn't be possible otherwise because of incompatible interfaces
+ * Adapter lets classes work together that couldn't be possible otherwise because of incompatible interfaces
  *
  **/
 public class AdapterTestDrive {
