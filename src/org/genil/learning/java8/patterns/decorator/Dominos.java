@@ -19,8 +19,11 @@ public class Dominos {
         vegComboPizza = new Pepper(vegComboPizza);
         vegComboPizza = new Jalepeno(vegComboPizza);
 
+        System.exit(2);
+
 
         System.out.println(vegComboPizza.getDescription() + " $ "+vegComboPizza.getCost());
+//        return 1;
 
     }
 }

@@ -37,6 +37,8 @@ public class NutritionFacts {
 
         public Builder sodium(int sodium) {
             this.sodium = sodium;
+
+//            new NutritionFacts().servingSize
             return this;
         }
 
@@ -52,7 +54,7 @@ public class NutritionFacts {
     private int fat;
 
 
-    public static void main(String[] args) {
+    public static void main(String ...arg) {
         //Demo
 
         NutritionFacts cocoCola = new NutritionFacts.Builder(20,10).fat(0).sodium(20).build();
