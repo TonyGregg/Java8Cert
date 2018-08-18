@@ -42,7 +42,7 @@ public class FileUtil {
         File todayFiles[] = folder.listFiles(todayFileFilter);
         File yesterdayFiles[] = folder.listFiles(yesterdayFileFilter);
 
-        //3. Get the latest modified file for today and yesterday
+        //3. Get the latest modified file of today and yesterday
 
         File[] files = new File[2];
         files[0] = getLatestModifiedFile(todayFiles);
