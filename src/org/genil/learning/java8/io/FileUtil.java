@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
  **/
 public class FileUtil {
 
-    private static final String DATE_FORMAT = "yyyy-MM-dd";
     private static final String DASH = "-";
     private static final String FOLDER = "/Users/genil/Documents/temp";
     private static final String ZERO = "0";
