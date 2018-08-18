@@ -1,6 +1,7 @@
 package org.genil.learning.java8.basics;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
@@ -16,9 +17,25 @@ public class Person implements Serializable {
 
     private void writeObject(ObjectOutputStream objectOutputStream) throws ClassNotFoundException, IOException {
         System.out.println("Inside custom write object");
+//        objectOutputStream.defaultWriteObject();
         email = email + "@gmail.com";
+        objectOutputStream.writeUTF(name);
+        objectOutputStream.writeUTF(email);
+        objectOutputStream.writeInt(age);
 
     }
+
+    private void readObject(ObjectInputStream objectInputStream) throws ClassNotFoundException,IOException {
+
+//        objectInputStream.defaultReadObject();
+
+        name = objectInputStream.readUTF();
+        email = objectInputStream.readUTF();
+        age = objectInputStream.readInt();
+
+    }
+
+
 
     private String name;
     private String email;
