@@ -4,7 +4,7 @@ import java.io.File;
 import java.time.LocalDateTime;
 
 /**
- * Created by Tony on 8/18/18 at 07 43
+ * Created by Antony on 8/18/18 at 07 43
  **/
 public class FileUtil {
 
@@ -44,8 +44,8 @@ public class FileUtil {
         //3. Get the latest modified file of today and yesterday
 
         File[] files = new File[2];
-        files[0] = getLatestModifiedFile(todayFiles);
-        files[1] = getLatestModifiedFile(yesterdayFiles);
+        files[0] = getLatestModifiedFile(todayFiles); // Today's
+        files[1] = getLatestModifiedFile(yesterdayFiles); // Yesterday's
 
         return files;
 
@@ -57,8 +57,7 @@ public class FileUtil {
      * @param files
      * @return the last modified file from the list of files
      */
-    private File getLatestModifiedFile(File[] files) {
-        if(files == null || files.length ==0) {
+    private File getLatestModifiedFile(File[] files) {        if(files == null || files.length ==0) {
             return null;
         }
 
