@@ -22,5 +22,19 @@ class FileUtilTest {
         File[] files = fileUtil.getLatestLastTwoDaysFile(FOLDER);
 
         System.out.println("Todays latest file : "+files[0] + "\nYesterday's : "+files[1]);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("1,");
+        stringBuilder.append("2,");
+        stringBuilder.append("3,");
+        stringBuilder.append("4,");
+
+        System.out.println(stringBuilder.toString());
+
+        System.out.println(" -----");
+
+        stringBuilder.setLength(stringBuilder.length()-1);
+
+        System.out.println(stringBuilder);
     }
 }
