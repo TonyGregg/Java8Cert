@@ -9,7 +9,7 @@ public class HayStorage implements Cloneable{
 
     }
 
-    // Step # 2. Declare private static reference of the singleton class
+    // Step # 2. Declare private static volatile reference of the singleton class
 
     private static volatile HayStorage hayStorageInstance = null;
 
@@ -17,7 +17,7 @@ public class HayStorage implements Cloneable{
 
     // The method should be public and static for other class to access
 
-    public static synchronized HayStorage getInstance() {
+    public static HayStorage getInstance() {
         if(hayStorageInstance == null) {
             synchronized (HayStorage.class) {
                 if (hayStorageInstance == null) {

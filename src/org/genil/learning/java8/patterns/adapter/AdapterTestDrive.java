@@ -20,8 +20,9 @@ public class AdapterTestDrive {
 
         wildTurkey.gobble();
         wildTurkey.fly();
+        System.out.println(" ----  see the adapter in acion next ---");
 
-        duckAdaptor.quack();
+        duckAdaptor.quack(); // It calls instead the vendor turkey's method gobble
         duckAdaptor.fly();
 
 

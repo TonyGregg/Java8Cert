@@ -9,6 +9,15 @@ import java.io.Serializable;
  * Created by genil on 7/2/18 at 09 03
  **/
 public class Person implements Serializable {
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public Person(String name, String email, int age) {
         this.name = name;
         this.email = email;
