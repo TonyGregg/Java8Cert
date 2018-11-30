@@ -16,7 +16,7 @@ import static java.lang.Integer.*;
 
 };
 
-public class Coffee {
+ class Coffee {
     static CofeeSize someCoffee;
     public static void main(String[] args) {
         int size = someCoffee.LARGE.cofeeSize;

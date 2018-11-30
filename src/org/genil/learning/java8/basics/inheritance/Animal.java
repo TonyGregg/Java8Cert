@@ -12,8 +12,18 @@ public class Animal {
     }
     Animal() {
         System.out.println("Animal default constructor !");
+        new Dog();
     }
     public void eat() throws IOException {
         System.out.println("Animal eats more generic food");
+        doKaka();
+    }
+
+    private void doKaka() { // will never be inherited.
+        System.out.println("Animal going kaka. ..");
+    }
+
+    private final void someMethod() {
+        System.out.println("Yes private final is allowed !!");
     }
 }
