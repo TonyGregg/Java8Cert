@@ -1,4 +1,71 @@
+Chapter # 3
+--------
+1. C
+2. E
+3. C
+4. F
+5. A
+6. B
+7) A, B,G
+8) E
+9) D
+10) A
+11) D
+12) B
+13) E;
+
+
+
+
+Chapter # 2
+
+1) B & E
+2) E - Compilation fails; super class has no default constructor
+3) A
+4)
+
+class AgedP {
+    -----------AgedP() {
+    }
+    public AgedP(int x) {
+        ----------------
+    }
+}
+
+public class Kinder extends AgedP {
+    ------------------
+    public Kinder (int x) {
+        ----------
+    }
+  }
+5) D
+6) C
+7) A
+8) F
+9) A
+10) b
+11) C
+12.
+13) a - polymorphism applies only to methods, not to instance
+14) E & G
+15) E - compilation fails
+16) a,c
+
+
+
 Chapter # 1
 
 1) C
-2)
+2) B & F
+3) B - A.
+4) A - Woof Burble
+5) D & E - compilation fails at line # 8 & 9
+6) A - compilation succeeds
+7) C & D
+8) B - Wed
+9) D
+10) A - will not compile
+11) C & E
+12) B, C & F
+13) C, D
+

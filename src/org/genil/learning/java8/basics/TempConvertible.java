@@ -25,4 +25,5 @@ public interface TempConvertible {
         //C = (F-32)/(5/9)
         return (int)((fTemp-32)/1.8);
     }
+   int m3();
 }

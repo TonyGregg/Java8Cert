@@ -4,7 +4,7 @@ package org.genil.learning.java8.logic;
 /**
  * Created by genil on 11/1/18 at 14 29
  **/
-public class RoboMover {
+class RoboMover {
     /**
      * Possible moves L - Left, R - Right, M - Move
      */
@@ -100,7 +100,7 @@ public class RoboMover {
 
         RoboMover mover = new RoboMover();
 
-        String runString = "LMLMLMLMM";
+        String runString = "LMLMLMLMMMMMMMMMMMMMMMMMMRMMMMM";
 
         char[] chars = runString.toCharArray();
 

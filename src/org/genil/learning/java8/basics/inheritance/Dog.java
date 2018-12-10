@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * Created by genil on 10/4/18 at 07 59
  **/
-public class Dog extends Animal {
+public class  Dog extends Animal {
     public Dog(String name) {
 //        super();
 //        this();

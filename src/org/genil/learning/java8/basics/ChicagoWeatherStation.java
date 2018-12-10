@@ -11,4 +11,16 @@ public class ChicagoWeatherStation implements TempConvertible {
 
         System.out.println("F to C : "+TempConvertible.getFtoC(f));
     }
+
+    @Override
+    public int m3() {
+        Coffee coffee  = new Coffee();
+        ChicagoWeatherStation chicagoWeatherStation = new ChicagoWeatherStation();
+
+//        coffee = (Coffee)chicagoWeatherStation; //incompatible
+
+        return 0;
+
+
+    }
 }

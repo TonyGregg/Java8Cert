@@ -10,9 +10,21 @@ public class Electronics implements Device {
     public void doIt() {
 
     }
-}
 
-abstract class Phone1 extends  Electronics{
+    public static void main(String[] args) {
+        Phone1 phone1 = new Phone1();
+        Electronics electronics;
+        electronics = phone1; // works
+
+        phone1 = (Phone1) electronics; //works at compile time, but might fail at runtime
+
+        Coffee coffee = new Coffee();
+
+//        phone1 = (Phone1)coffee; // fails at compile time, inconvertible types
+
+    }
+}
+ class Phone1 extends  Electronics{
 
 }
 
