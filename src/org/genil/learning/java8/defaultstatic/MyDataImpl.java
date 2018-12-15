@@ -25,5 +25,7 @@ public class MyDataImpl implements  MyData{
         MyData.staticMethod(); // this is the only way static interface can be accessed
         obj.print("some "); // inherited from interface default method.. this is the only way it can be accessed
 
+
+
     }
 }

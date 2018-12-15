@@ -15,7 +15,7 @@ public abstract interface MyData {
 
         return str == null ? true : "".equals(str) ? true : false;
     }
-    static void staticMethod() {
+     static void staticMethod() {
         System.out.println("this is interface static method ");
     }
 }

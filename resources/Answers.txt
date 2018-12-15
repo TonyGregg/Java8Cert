@@ -1,3 +1,68 @@
+Chapter 6
+-----------
+
+1) a, d
+2) d
+3) e
+4) c
+5) b
+6) a, f
+7) c
+8) d, f
+9) b
+10 ) a
+11) d
+12) f
+13) f
+14) d
+15) c
+16) b,e,f
+17) c
+18) b, e (one object)
+19) a,c,d,e,f
+
+
+
+
+
+
+Chapter #5
+----------
+
+1) c
+2) b
+3) c, d
+4) e
+5) a,d,f
+6) e
+7) c
+8) d
+9) d
+10) d
+11) h
+12) c
+13) b, e
+14) e
+15) b
+16)c, d
+
+
+Chapter # 4
+-----------
+
+1) d - everything
+2) c
+3) e
+4) g : 72 foo425 86foo
+5)
+6) a
+7) a
+8) c
+9) c, f
+10) d
+
+
+
 Chapter # 3
 --------
 1. C
