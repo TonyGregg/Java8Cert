@@ -16,9 +16,12 @@ import static java.lang.Integer.*;
 
 };
 
-public class Coffee {
+ public class Coffee {
     static CofeeSize someCoffee;
+    public enum Days {MON,TUE,WED};
+
     public static void main(String[] args) {
+        Days[] d2 =  Days.values();
         int size = someCoffee.LARGE.cofeeSize;
         for (CofeeSize cs : CofeeSize.values()) {
             System.out.println(cs+ " "+cs.cofeeSize);
@@ -32,6 +35,7 @@ public class Coffee {
 
 class StatTest {
     public static void main(String[] args) {
+
         System.out.println(Integer.MAX_VALUE);
     }
 }

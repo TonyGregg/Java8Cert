@@ -21,9 +21,11 @@ public class Dice {
 
     public int roll() {
 
+
         Random diceVal = new Random();
         displayFacetValue = diceVal.nextInt(6);
         return displayFacetValue;
 
     }
 }
+
