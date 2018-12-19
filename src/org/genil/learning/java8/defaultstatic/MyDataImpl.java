@@ -15,6 +15,10 @@ public class MyDataImpl implements  MyData{
     }
     private final void sm2() { // private final is redundant, but allowed
         System.out.println("some method.");
+        MyData.super.print("is another way to access interface default method");
+//        MyData.super.staticMethod() // not accessible..
+
+//        MyData.staticMethod();// is possible
     }
 
     public static void main(String args[]){
@@ -24,6 +28,12 @@ public class MyDataImpl implements  MyData{
 
         MyData.staticMethod(); // this is the only way static interface can be accessed
         obj.print("some "); // inherited from interface default method.. this is the only way it can be accessed
+
+
+        MyDataImpl myData = new MyDataImpl();
+        myData.print("test interface print ??");
+
+
 
 
 

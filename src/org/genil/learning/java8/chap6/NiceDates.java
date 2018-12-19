@@ -1,5 +1,7 @@
 package org.genil.learning.java8.chap6;
 
+import org.relaxng.datatype.DatatypeException;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -10,6 +12,8 @@ public class NiceDates {
     public static void main(String[] args) {
         DateTimeFormatter f1 = DateTimeFormatter.ofPattern("MMM dd,yyyy");
         DateTimeFormatter f2 = DateTimeFormatter.ofPattern("E MMM dd,yyyy G");
+
+        DateTimeFormatter dateTimeFormatter  = DateTimeFormatter.ISO_LOCAL_TIME;
 
         LocalDate localDate = LocalDate.now();
 

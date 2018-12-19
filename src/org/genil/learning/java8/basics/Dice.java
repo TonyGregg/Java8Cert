@@ -27,5 +27,22 @@ public class Dice {
         return displayFacetValue;
 
     }
+
+    private int getSomeRandom(int x) {
+        double d = Math.random();
+        System.out.println("d= "+d);
+        return (int)(d * x);
+    }
+
+    public static void main(String[] args) {
+        Dice dice = new Dice();
+
+        System.out.println(dice.getSomeRandom(1));
+        System.out.println(dice.getSomeRandom(1));
+        System.out.println(dice.getSomeRandom(2));
+        System.out.println(dice.getSomeRandom(1));
+        System.out.println(dice.getSomeRandom(1));
+
+    }
 }
 

@@ -69,6 +69,13 @@ public class NumberDemo {
         short x =232;
 
 
+        int i2 = new Integer("30");
+        float f23 = new Float("23.23");
+
+        System.out.println("f23 "+f23);
+
+
+
 
     }
     void doDemo() {
@@ -87,6 +94,9 @@ public class NumberDemo {
         b1 += 7; // is allowed, as auto cast
 
         int hex = 0x2_a;
+
+
+
 
 
     }
