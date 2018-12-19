@@ -41,6 +41,12 @@ public class  Dog extends Animal {
     }
 
     public void doKaka() {
+        try {
+            super.eat();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("Dog going kaka. ..");
     }
 

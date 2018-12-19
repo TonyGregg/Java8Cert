@@ -20,12 +20,12 @@ public class PrecedenceDemo {
 
 
         System.out.println("Args length "+args.length);
-
-        if(args.length == 1 | args[0].equals("test")) {
-            System.out.println("test case");
-        } else {
-            System.out.println("production args "+args[0]);
-        }
+//
+//        if(args.length == 1 | args[0].equals("test")) {
+//            System.out.println("test case");
+//        } else {
+//            System.out.println("production args "+args[0]);
+//        }
 
         System.out.println(x1/a1 + ".. " + x1/b);
 
@@ -41,6 +41,14 @@ public class PrecedenceDemo {
         if( !(mask>1) && ++count > 1) mask = mask + 100;
 
         System.out.println(" Mask : "+mask + " Count : "+count);
+
+        boolean b1 = true;
+        boolean b2 = false;
+
+        System.out.println(" "+ (!b1 & ( b2 = true)));
+
+        System.out.println(" b2 ^ b1 :  " + (b2 ^ b1));
+
 
 
 

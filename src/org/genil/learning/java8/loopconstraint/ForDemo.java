@@ -9,8 +9,19 @@ public class ForDemo {
 //            breakLabelDemo();
 //        continueLabelDemo();
 
-        demoAge();
+//        demoAge();
 
+        mysteryFor();
+    }
+    static void mysteryFor() {
+        for (int i=0; true | false; i++) {
+            if(--i ==0 || i == 2) {
+                System.out.print("Yes " +i +" ");
+                break;
+            } else if( i++ %2 ==0) {
+                System.out.print("No "+i +" ");
+            }
+        }
     }
 
     static void breakLabelDemo() {

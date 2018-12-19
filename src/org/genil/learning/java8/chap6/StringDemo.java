@@ -29,7 +29,26 @@ public class StringDemo {
         stringBuilder1.append("d");
 
 
-        System.out.println("sb1 "+stringBuilder1 + " sb2 "+stringBuilder2 + " sb1 == sb2 ? "+ (stringBuilder1 == stringBuilder2));
+        System.out.println("sb1 "+stringBuilder1
+                + " sb2 "+stringBuilder2
+                + " sb1 == sb2 ? "+ (stringBuilder1 == stringBuilder2)); // true
+
+        StringBuilder sb1 = new StringBuilder("sb1");
+        StringBuilder sb2 = sb1.append("x");
+        System.out.println("sb1. equals sb2 "+sb1.equals(sb2)); // true
+
+        sb2.append("some more");
+
+
+        System.out.println("sb1 : "+sb1 +"\nsb2 : "+sb2 + " \nare they equal??? "+ (sb1.equals(sb2)));
+
+        StringBuilder sb3 = new StringBuilder("sb1xsome more");
+
+        if(sb1.equals(sb3)) {
+            System.out.println("sb1 and sb3 are suprisingly requa.s. .. no way this can happen");
+        } else {
+            System.out.println(" As predcted they are not equals");
+        }
 
         String  javaRo = "JAVArocks";
         int x  = 10;
