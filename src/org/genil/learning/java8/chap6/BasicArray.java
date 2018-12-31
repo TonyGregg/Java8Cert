@@ -4,6 +4,10 @@ package org.genil.learning.java8.chap6;
  * Created by genil on 12/14/18 at 14 08
  **/
 public class BasicArray {
+
+   static Double[] instanceArr = new Double[2];
+
+   static double[] instanceDoubleArr = new double[2];
     public static void main(String[] args) {
         int []a, a1[];
 
@@ -24,9 +28,28 @@ public class BasicArray {
 
         int[][]a2 = (int[][]) o1;
 
-        int[] b2 = (int[]) o1;
+//        int[] b2 = (int[]) o1;
 
         System.out.println(" b[1] = "+b[1]);
+
+        Double[] arr = new Double[2]; //null
+
+         double[] methodDpo = new double[2];
+
+
+        System.out.println(arr[0] + " "+instanceArr[0] + " "+instanceDoubleArr[0] + " -- "+methodDpo[0]);  // null null 0.0 0.0
+
+//        double ds = arr[0] + arr [1];
+//
+//        System.out.println("Uninizaliased array total "+ds);
+
+        int [] arr1 = {1, 2, 3};
+        char [] arr2 = {'A', 'B'}; //ASCII code of 'A' is 65, 'B' is 66
+//        arr1 = (int[]) arr2; // comile time error
+//        arr1 = arr2; // comile time error
+//        for(int i = 0; i < arr1.length; i++) {
+//            System.out.print(arr1[i] + " ");
+//        }
 
 
 

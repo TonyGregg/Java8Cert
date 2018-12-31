@@ -49,10 +49,55 @@ public class PrecedenceDemo {
 
         System.out.println(" b2 ^ b1 :  " + (b2 ^ b1));
 
+        count = -1;
+
+        int remainder = count %2;
+
+        System.out.println("Remainder of -1%2 = "+remainder);
+
+        java.lang.Runtime.getRuntime().gc();
+
+        java.lang.System.gc();
+
+        a = 20;
+        int var = --a * a++ + a-- - --a;
+        System.out.println("a = " + a);
+        System.out.println("var = " + var);
+
+        final int sdfw2 =230;
+
+        int xij = 10;
+
+        m1(xij++, ++xij);
 
 
+        byte b123 = (byte) (127 + 21);
+        System.out.println(b123);
 
 
+        short s = Short.MAX_VALUE;
+        char c = (char) s;
+        System.out.println("is proctedInt and Short.MAX same? : " + (c == Short.MAX_VALUE));
 
+        int i = 1234567890;
+        float f = i;
+        System.out.println("Result : "+ (i - (int)f));
+
+
+        b1 = false;
+        b2 = false;
+
+        if (b2 != b1 == !b2){
+            System.out.println("true : b2 :"+b2);
+        }
+        else{
+            System.out.println("false : "+" b2 :  "+b2);
+        }
+
+
+    }
+
+    private static void m1(int a, int b) {
+        System.out.println("a: "+a+ ", b: "+b);
     }
 }

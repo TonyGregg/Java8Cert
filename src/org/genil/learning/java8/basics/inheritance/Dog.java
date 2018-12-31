@@ -21,6 +21,8 @@ public class  Dog extends Animal {
         this(makeRandomName());
 
         System.out.println("inside Dog's default constructor");
+        super.name = "Doggy-Doggy !";
+        eat();
     }
 
     String name;

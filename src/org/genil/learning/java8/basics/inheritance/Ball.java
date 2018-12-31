@@ -9,4 +9,16 @@ public interface Ball extends Rollable {
     public default int getBounceFactor() {
         return 5;
     }
+
+    static void m1() {
+
+    }
+
+    static void m2() {
+
+    }
+
+    public default void helloMe() {
+
+    }
 }

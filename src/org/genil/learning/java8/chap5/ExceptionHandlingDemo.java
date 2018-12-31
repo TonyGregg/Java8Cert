@@ -1,4 +1,4 @@
-package chap5;
+package org.genil.learning.java8.chap5;
 
 /**
  * Created by genil on 12/18/18 at 16 25

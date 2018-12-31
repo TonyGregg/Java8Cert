@@ -3,7 +3,7 @@ package org.genil.learning.java8.chap6;
 /**
  * Created by genil on 12/13/18 at 19 34
  **/
-public class StringDemo {
+public class StringDemo extends Object {
 
     public static void main(String[] args) {
         //charat
@@ -58,6 +58,43 @@ public class StringDemo {
         System.out.println("javaRa "+javaRo);
         javaRo.toUpperCase();
 
+        StringBuilder stringBuilder3 = new StringBuilder("..fedcba");
+        stringBuilder3.delete(3,6);
 
+        System.out.println("After deleting 3, 6 "+stringBuilder3); //..fba
+
+        stringBuilder3.insert(3,"az"); //
+
+        System.out.println("after inserting 3, az "+stringBuilder3); // ..fazba
+
+        int index = 0;
+        if(stringBuilder3.length()>6) {
+            index = stringBuilder3.indexOf("b");
+        }
+
+        System.out.println("Index "+index);
+
+        String string = "Fresh String";
+
+        change(string);
+
+        System.out.println("String builder before chnage : "+stringBuilder1);
+
+        change(stringBuilder1);
+
+        System.out.println("Is string modified :"+string + ", is stringbuilder modified : "+stringBuilder1);
+
+        System.out.println( 23 / 2.0 );
+        System.out.println( 23 % 2.0 );
+
+        
+
+    }
+    private static void change(String string) {
+        string = string.concat(" good modified ");
+    }
+
+    private static void change(StringBuilder stringBuilder) {
+        stringBuilder.append(" is modified.. . ");
     }
 }

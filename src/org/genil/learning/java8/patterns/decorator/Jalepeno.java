@@ -3,7 +3,7 @@ package org.genil.learning.java8.patterns.decorator;
 /**
  * Created by genil on 6/23/18 at 21 04
  **/
-public class Jalepeno extends PizzaDecorator {
+public  class Jalepeno extends PizzaDecorator {
     public Jalepeno(Pizza pizza) {
         this.pizza = pizza;
     }
