@@ -1,5 +1,7 @@
 package org.genil.learning.java8.chap6;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 /**
@@ -24,9 +26,19 @@ public class LambdaSample {
 //             adder(20,30)>20;
 //        });
 
+        boolean b = checkList(new ArrayList(), a->a.isEmpty());
+
+//        checkList(new ArrayList(), ArrayList al -> al.isEmpty()); // compile time error
+        checkList(new ArrayList(), al -> {return al.size() == 0;});
+        checkList(new ArrayList(), al -> al.add("hello"));
+
+//        checkList(new ArrayList(), (ArrayList al) -> al.isEmpty());
+
+
+
     }
 
-    void go(Predicate<LambdaSample> expre) {
+    final void go(Predicate<LambdaSample> expre) {
         LambdaSample lambdaSample = new LambdaSample();
 
         System.out.println(expre.test(lambdaSample) ? "ternary true": " terenary false");
@@ -34,5 +46,9 @@ public class LambdaSample {
 
     static int adder(int x, int y) {
         return x+y;
+    }
+
+    public static boolean checkList(List list, Predicate<List> p){
+        return p.test(list);
     }
 }

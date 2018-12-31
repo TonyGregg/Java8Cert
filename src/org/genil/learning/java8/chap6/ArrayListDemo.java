@@ -34,6 +34,7 @@ public class ArrayListDemo {
         ages.add(30);
         ages.add(1);
 
+
         System.out.println("Ages before remove : "+ages);
 
         ages.remove(1); // removes the index !!!
