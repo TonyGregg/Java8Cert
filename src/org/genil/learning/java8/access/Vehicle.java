@@ -11,3 +11,7 @@ public abstract class Vehicle {
     }
 }
 
+class Some1 {
+
+}
+

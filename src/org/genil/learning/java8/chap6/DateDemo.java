@@ -1,7 +1,8 @@
 package org.genil.learning.java8.chap6;
 
 import java.time.LocalDate;
-import java.time.Month;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -40,7 +41,49 @@ public class DateDemo {
 //        LocalDate localDate = LocalDate.of(2018, Month.FEBRUARY,31); // Runtime exception
 //
 //        System.out.println(localDate.getDayOfWeek());
-//
+        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalTime.of(23,59);
 
+        System.out.println(" Getting second : "+localDateTime.getSecond());
+
+        Period period = Period.of(0,0,0);
+
+        System.out.println(period);
+
+        LocalDate date = LocalDate.parse("1947-08-14");
+        LocalTime time = LocalTime.MAX;
+        System.out.println(date.atTime(time));
+
+
+        LocalDate d1 = LocalDate.parse("1999-09-09");
+        LocalDate d2 = LocalDate.parse("1999-09-09");
+        LocalDate d3 = LocalDate.of(1999, 9, 9);
+        LocalDate d4 = LocalDate.of(1999, 9, 9);
+        System.out.println((d1 == d2) + ":" + (d2 == d3) + ":" + (d3 == d4));
+
+
+        LocalDate newYear = LocalDate.of(2018, 1, 1);
+        LocalDate eventDate = LocalDate.of(2018, 1, 1);
+        boolean flag1 = newYear.isAfter(eventDate);
+        boolean flag2 = newYear.isBefore(eventDate);
+        System.out.println(flag1 + ":" + flag2);
+
+
+        LocalDate joiningDate = LocalDate.parse("2006-03-16");
+        System.out.println(" withDayOfYear: "+joiningDate.withDayOfYear(29));
+
+
+        LocalDate date1 = LocalDate.parse("1947-08-15", DateTimeFormatter.ISO_DATE);
+        LocalDate date2 = LocalDate.parse("1947-08-15",
+                DateTimeFormatter.ISO_LOCAL_DATE);
+        LocalDate date3 = LocalDate.of(1947, 8, 15);
+
+        System.out.println(date1.equals(date2) + " : " + date2.equals(date3));
+
+
+    }
+
+    private static void m(Number obj) {
+        System.out.println("Number version");
     }
 }

@@ -6,6 +6,7 @@ package org.genil.learning.java8.initBlocks;
 public class InitDemoWithConstructor extends Super2{
     static int staticX;
     int x;
+    static final int INTERVAL = 10;
     InitDemoWithConstructor() {
         System.out.println("Inside constructor");
         staticX = 100;
@@ -30,7 +31,7 @@ public class InitDemoWithConstructor extends Super2{
     }
 
     public static void main(String[] args) {
-        System.out.println(" #### 1");
+        System.out.println(" #### 1..");
         InitDemoWithConstructor demoWithConstructor = new InitDemoWithConstructor();
         System.out.println(demoWithConstructor.x + " static x" +staticX);
     }
