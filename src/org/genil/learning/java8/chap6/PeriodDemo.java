@@ -46,10 +46,24 @@ public class PeriodDemo {
         System.out.println("LocalDate should be unmodifie.d. . "+date);
 
         date = LocalDate.parse("2000-06-25");
-        while(date.getDayOfMonth() >= 20) {
-            System.out.println(date);
-            date.plusDays(-1);
-        }
+//        while(date.getDayOfMonth() >= 20) {
+//            System.out.println(date);
+//            date.plusDays(-1);
+//        }
+
+
+        period = Period.ofMonths(26);
+        period = period.plusDays(32);
+
+        date = LocalDate.now();
+
+        date = date.plus(Period.of(0,1,1));
+
+        System.out.println(" 1 month and 1 day from today "+date);
+
+
+        System.out.println("period.getMonths of 13 Months " +
+                ":  "+period.getMonths() + ", years ? "+period.getYears() +", days? "+period.getDays());
     }
 
 

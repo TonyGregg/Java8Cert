@@ -19,11 +19,31 @@ public class Demo {
             System.out.println(year[i]); // all zero for local arrays too
         }
 
+        this.met1();
+
+    }
+
+    void met1() {
+
     }
 
     public static void main(String[] args) {
         new Demo().go();
         Runtime.getRuntime().gc();
         System.gc();
+
+        int i,j;
+
+        if(true) {
+            i = 0;
+        } else {
+            j = 2;
+        }
+
+        for (i=0, j = 3;j<i;++i) {
+
+        }
+
+        System.out.println("i "+i + " j "+j) ;
     }
 }

@@ -10,6 +10,19 @@ public class SwitchDemo {
     }
     public static void main(String args[]) {
         boolean bool = false;
+
+        Integer integer = new Integer(2);
+
+        switch (integer) {
+
+        }
+
+        int x;
+
+//        switch (x) { //compile time error. x is not initialized
+//
+//        }
+
         doMultipleSwithDemo();
 
 //        switch (bool) { // not allowed
@@ -24,6 +37,8 @@ public class SwitchDemo {
 //        byte b4 = b3 + 4; // won't compile b3 + b2 also wont' compile
 
         switch (b2) {
+
+
             case b1:
                 System.out.println("case b1... ");
                 break;

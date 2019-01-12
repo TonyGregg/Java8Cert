@@ -4,8 +4,8 @@ package org.genil.learning.java8.basics;
  * Created by Antony Genil Gregory on 12/29/2018 2:58 PM
  * For project : Java8Cert
  **/
-public abstract class AbstractClassDemo {
-    abstract void calc();
+strictfp public abstract class AbstractClassDemo {
+    protected abstract  void calc();
 
     int x = 10;
     int y;

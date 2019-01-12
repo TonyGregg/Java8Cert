@@ -7,6 +7,7 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAmount;
 
 /**
  * Created by genil on 12/14/18 at 05 27
@@ -20,7 +21,7 @@ public class DateDemo {
         LocalDate bDay = null;
         try {
             bDay = LocalDate.parse(str,dateTimeFormatter);
-        }catch (DateTimeParseException dateEx) {
+        }catch (DateTimeParseException dateEx) { // It is a runtime exception
             System.out.println("Bad date Indy");
             return;
         }
@@ -48,11 +49,11 @@ public class DateDemo {
 
         Period period = Period.of(0,0,0);
 
-        System.out.println(period);
+        System.out.println(" 000 Period : "+period);
 
         LocalDate date = LocalDate.parse("1947-08-14");
         LocalTime time = LocalTime.MAX;
-        System.out.println(date.atTime(time));
+        System.out.println(" date @ MAX time :: "+date.atTime(time));
 
 
         LocalDate d1 = LocalDate.parse("1999-09-09");
@@ -79,6 +80,16 @@ public class DateDemo {
         LocalDate date3 = LocalDate.of(1947, 8, 15);
 
         System.out.println(date1.equals(date2) + " : " + date2.equals(date3));
+
+        date1 = LocalDate.parse("2018-01-01", DateTimeFormatter.ISO_DATE);
+
+        date1 = date1.minusMonths(1);
+
+        System.out.println(" - 1 months : "+date1);
+
+        date1 = date1.minusDays(1);
+
+        System.out.println(" -1 day : "+date1);
 
 
     }

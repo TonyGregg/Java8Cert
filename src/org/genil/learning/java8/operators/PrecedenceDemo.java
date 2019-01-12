@@ -94,10 +94,39 @@ public class PrecedenceDemo {
             System.out.println("false : "+" b2 :  "+b2);
         }
 
+        int k = m1(args.length);
+
+        System.out.println(" k NOW " +k);
+
+        k += 3 + ++k;
+
+        System.out.println(" K = "+k);
+
+
+         b1 = true;
+         b2 = false;
+
+         if(b1 = b1 != b2) {
+             System.out.println("true");
+         } else {
+             System.out.println("false");
+         }
+
+
+
+
 
     }
 
     private static void m1(int a, int b) {
         System.out.println("a: "+a+ ", b: "+b);
+    }
+
+    private  static int m1(int a) {
+        return ++a;
+    }
+
+    public boolean checkIt(int k) {
+        return k-->0;
     }
 }
