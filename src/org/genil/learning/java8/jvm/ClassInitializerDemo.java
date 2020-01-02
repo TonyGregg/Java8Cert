@@ -19,6 +19,15 @@ class Sub extends Super {
     static {
         System.out.println("Sub class static initializer");
     }
+    static int x = 3222;
+
+    {
+        x =32;
+    }
+
+    static {
+        x = 2300;
+    }
     Sub() {
         System.out.println("Sub class constructor called");
     }
@@ -41,5 +50,10 @@ public class ClassInitializerDemo {
         System.out.println(Sub.FINAL1);
         System.out.println(Sub.FINAL2);
         new Sub();
+
+
+        System.out.println("subs final x : "+Sub.x);
     }
+
+
 }

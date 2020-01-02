@@ -10,6 +10,7 @@ import static java.lang.Integer.*;
  enum CofeeSize {
     SMALL(5), MEDIUM(12), LARGE(20);
     int cofeeSize;
+    int var2;
     CofeeSize(int cofeeSize) {
         this.cofeeSize = cofeeSize;
     };
@@ -24,7 +25,7 @@ import static java.lang.Integer.*;
         Days[] d2 =  Days.values();
         int size = someCoffee.LARGE.cofeeSize;
         for (CofeeSize cs : CofeeSize.values()) {
-            System.out.println(cs+ " "+cs.cofeeSize);
+            System.out.println(cs+ " "+cs.cofeeSize + " how about var 2 "+cs.var2);
         }
         CofeeSize[] cofeeSizes = CofeeSize.values();
 

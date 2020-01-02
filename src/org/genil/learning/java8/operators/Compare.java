@@ -1,5 +1,7 @@
 package org.genil.learning.java8.operators;
 
+import org.genil.learning.java8.basics.inheritance.Dog;
+
 import java.util.Collections;
 
 /**
@@ -39,6 +41,10 @@ public class Compare {
         if(color instanceof Color) {
             System.out.println("color is instance of Color");
         }
+
+//        if(color instanceof Dog) { //error
+//
+//        }
 
         System.out.println(" null instance of Object? "+ (null instanceof  Object));
 

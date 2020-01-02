@@ -16,5 +16,16 @@ public class WhileDemo {
         System.out.println("i = " +i+ " j = "+j);
         long y = 123_456L;
         float f1 = 123_345_667F;
+
+
+        int count = 0, sum = 0;
+
+        do {
+
+            if(count %3 == 0) continue;
+            sum+=count;
+        } while (count++ <  11);
+
+        System.out.println("sum "+sum);
     }
 }

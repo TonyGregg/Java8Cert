@@ -46,7 +46,13 @@ public class PassReferenceDemo {
 
         changeInt(x);
 
-        System.out.println("Is integer changed "+x); // Nope !!
+        System.out.println("Is integer changed "+x); // Nope !! They are IMMUTABLE
+
+        int[] ints = {1};
+
+        changeInt(ints);
+
+        System.out.println("Is int changed ? "+ints[0]); //Yes, it did
 
         String str = "--0.50";
 
@@ -57,10 +63,15 @@ public class PassReferenceDemo {
 
     }
 
+    static private void changeInt(int[] ints) {
+        ints[0]++;
+    }
+
 
     public static void processStacks(Stack x1, Stack x2) {
         x1.push(new Integer("100")); //assume that the method push adds the passed object to the stack.
         x2 = x1;
+
     }
 
     public static void processStudents(Student student1, Student student2) {
@@ -86,5 +97,7 @@ public class PassReferenceDemo {
 
     private static void changeInt(Integer integer) {
         integer++;
+
+
     }
 }
