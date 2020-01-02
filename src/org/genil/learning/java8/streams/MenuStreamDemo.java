@@ -1,7 +1,8 @@
 package org.genil.learning.java8.streams;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.OptionalInt;
 import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
@@ -29,7 +30,8 @@ public class MenuStreamDemo {
                 .collect(toList());
 
         OptionalInt maxCalorie = menus.stream().mapToInt(Menu::getCalories).max();
-        System.out.println(maxCalorie.isPresent()+ " "+maxCalorie.getAsInt());
+        System.out.println("Max calorie is present ? "+maxCalorie.isPresent()+ " "+maxCalorie.getAsInt());
+        OptionalInt maxOptionalCal =  menus.stream().mapToInt(Menu::getCalories).max();
 
         highCalorieDishNames.forEach(System.out::println);
 
@@ -38,6 +40,7 @@ public class MenuStreamDemo {
         Stream<String> stringStream = highCalorieDishNames.stream();
 
         stringStream.forEach(System.out::println);
+
 
 //        stringStream.forEach(System.out::println); // YOu can stream just only once !! This line will fail if enabled
         //IllegalStateException : stream already has been operated or closed
