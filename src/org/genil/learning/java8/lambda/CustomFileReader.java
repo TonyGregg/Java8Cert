@@ -27,12 +27,12 @@ public class CustomFileReader implements BufferedReaderProcessor{
         System.out.printf("# complete output using regular overrride\n");
         System.out.println(output);
 
-        String towLne = processFile((BufferedReader br)-> {
+        String twoLine = processFile((BufferedReader br)-> {
                 return  br.readLine() + br.readLine();
             }
         );
 
-        System.out.println("Just 2 lines "+towLne);
+        System.out.println("Just 2 lines "+twoLine);
 
 
 
